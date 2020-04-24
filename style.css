@@ -1,0 +1,101 @@
+/* Comentários são Assim*/
+
+html, body {
+    height: 100%;
+}
+
+/* p é meu seletor, que no html são as tags, tudo que tiver tag <p></p> vai ficar da cor que eu quero,ou com as propriedades dentro do p, dentro delde vem as propriedades*/
+h1{
+ /*color: blueviolet; Color pode ser em valor hex do rgb*/
+    color: violet;
+    font-size: 98px;
+    padding: 10 px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black; /*Direita vertical blur cor (pode ser hexa tbm)*/
+    background-color: rgba(0, 0, 0, 0.2);/* CSS3 Transparencia no canal alpha*/
+}
+
+body{
+    background-color: gainsboro;
+}
+
+/*O seletor * significa toda página*/
+*{
+    margin: 0;/*remove o espaço de cima que ele deixa automatico*/
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    background-color:#35b8b0;
+    background-image: url('cat.png');
+    background-size: 100px;
+    /*height: 150px;*/
+    height: 10%;
+}
+
+p,h2{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /*Cria uma transparência onde contem texto*/
+}
+
+/*Conteiner vai com # na frente*/
+#divEsquerda{
+    background-color:lightblue;
+    min-height: 200px;
+    width: 60%;
+    float: left;
+}
+#divDireita{
+    background-color: lightcyan;
+    min-height: 200px;
+    width: 40%;
+    float: right;
+}
+
+#menu{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*Pegará todos com a tag a dentro de menu*/
+#menu a{
+    text-decoration: none; /*Retira o underline do link*/
+    padding: 7px 8px;
+    color:black;
+    font-weight: bold;
+    border-radius: 5px;/*CSS3*/
+}
+
+/*Quando eu passar o mouse em cima da tag a do menu, acontecerá algo*/
+#menu a:hover{
+    background-color: lightblue;/*Muda a cor qdo passo mouse por cima*/
+}
+
+footer{
+    background-color:  #35b8b0;
+    background-image: -moz-linear-gradient(#35b8b0,white);/*CSS3 Cria um degradê entre duas cores, o qual é otimizado pro firefox*/
+    clear: both;
+    height: 10%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;/*Cima direita baixo esquerda*/
+}
+
+/*Class declara com . */
+.container{
+    width: auto;
+    margin: 0 auto;/**/
+    /*height: 300px;*/
+}
+
+.containerHeader{
+
+    /*min-height: 275px;*/
+}
+
+.principal{
+    background-size: 100%;
+    background-image: url('galaxy.JPG');
+    min-height: 472px;
+    clear: both;
+}
